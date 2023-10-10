@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { useState } from 'react'
 import { create, getting } from './Emp_Details'
+import { Create } from '../../react_task1/src/1_Task_EmployeeDetails'
 
 
 export let Registration=()=>
@@ -26,6 +27,7 @@ export let Registration=()=>
                 [name]:value
             }   
         })
+
     }
     // const setUservalues1=((temp1)=>
     // {
@@ -43,7 +45,7 @@ export let Registration=()=>
     const register=()=>
     {
         alert("Welcome to Zealouus Tech Corp (your values added successfully)"+JSON.stringify(uservalues))
-        create(uservalues)
+        Create(uservalues)
         alert(getting())
     }
     const reject=()=>

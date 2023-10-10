@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { replacevalues } from "./Emp_Details";
 
+
 export const Updating=(name)=>
 {   
     const [pos,setPos]=useState(name.who)
